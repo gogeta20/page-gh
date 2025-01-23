@@ -2,6 +2,11 @@
 import Flickity from "flickity";
 import { onMounted } from "vue";
 import ProjectItem from "@/components/ProjectItem.vue"
+import upraImg from "@/assets/projects/upra.png";
+import widiImg from "@/assets/projects/widi.png";
+import novaruaImg from "@/assets/projects/novarua.png";
+import lendrockImg from "@/assets/projects/lendrock.png";
+import xorforImg from "@/assets/projects/xorfor.png";
 
 onMounted(() => {
   const carousel = document.querySelector(".carousel");
@@ -24,15 +29,15 @@ onMounted(() => {
         <br />
         <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": false,  "groupCells": 1 }'>
 
-          <ProjectItem img="/src/assets/projects/upra.png" href="https://www.upra.org/es/" title="Upra" />
+          <ProjectItem :img="upraImg" href="https://www.upra.org/es/" title="Upra" />
 
-          <ProjectItem img="/src/assets/projects/widi.png" href="https://widitrade.com/" title="Widitrade" />
+          <ProjectItem :img="widiImg" href="https://widitrade.com/" title="Widitrade" />
 
-          <ProjectItem img="/src/assets/projects/novarua.png" href="https://novarua.es/" title="Novarua" />
+          <ProjectItem :img="novaruaImg" href="https://novarua.es/" title="Novarua" />
 
-          <ProjectItem img="/src/assets/projects/lendrock.png" href="https://www.lendrock.com/" title="Lendrock" />
+          <ProjectItem :img="lendrockImg" href="https://www.lendrock.com/" title="Lendrock" />
 
-          <ProjectItem img="/src/assets/projects/xorfor.png" href="https://ovmediorural.xunta.gal/es/tramites/xorfor"
+          <ProjectItem :img="xorforImg" href="https://ovmediorural.xunta.gal/es/tramites/xorfor"
             title="Xorfor" />
         </div>
         <p class="text-white pt-5">La arquitectura principalmente es DDD y CQRS.</p>
