@@ -19,11 +19,13 @@ function onMenuToggle(event: Event) {
   >
     <div class="container mx-auto px-4 flex items-center justify-between py-8">
       <!-- Logo -->
-      <div class="text-2xl font-bold">
-        <a href="/" class="text-white">MV</a>
-      </div>
+<!--      <div class="text-2xl font-bold">-->
+<!--        <a href="/" class="text-white">MV</a>-->
+<!--      </div>-->
+        <router-link to="/" class="text-white">MV</router-link>
 
-      <!-- Navigation -->
+
+        <!-- Navigation -->
       <!-- <nav class="hidden md:flex space-x-6">
         <a href="#home" class="text-white hover:text-gray-700">Home</a>
         <a href="#contact" class="text-white hover:text-gray-700">Contact</a>
