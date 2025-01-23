@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "module": "NodeNext",
+    "baseUrl": "./src", // Ruta base para resolver los módulos con '@'
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
+}
